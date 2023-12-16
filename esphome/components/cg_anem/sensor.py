@@ -9,8 +9,9 @@ from esphome.const import (
     DEVICE_CLASS_WIND_SPEED,
     STATE_CLASS_MEASUREMENT,
     UNIT_CELSIUS,
-    UNIT_METER_PER_SECOND,
 )
+
+UNIT_METER_PER_SECOND = "m/s"
 
 DEPENDENCIES = ["i2c"]
 
