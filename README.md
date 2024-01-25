@@ -1,6 +1,10 @@
 Example usage
 
 ```
+external_components:
+  - source: github://alexi-t/esphome-cg-anem@cg_anem
+    components: [ cg_anem ]
+
 sensor:
 - platform: cg_anem
   temperature:
