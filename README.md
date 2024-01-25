@@ -1,9 +1,21 @@
-# ESPHome [![Discord Chat](https://img.shields.io/discord/429907082951524364.svg)](https://discord.gg/KhAMKrd) [![GitHub release](https://img.shields.io/github/release/esphome/esphome.svg)](https://GitHub.com/esphome/esphome/releases/)
+Example usage
 
-[![ESPHome Logo](https://esphome.io/_images/logo-text.png)](https://esphome.io/)
-
-**Documentation:** https://esphome.io/
-
-For issues, please go to [the issue tracker](https://github.com/esphome/issues/issues).
-
-For feature requests, please see [feature requests](https://github.com/esphome/feature-requests/issues).
+```
+sensor:
+- platform: cg_anem
+  temperature:
+    name: "temp_dorm"
+  wind_speed:
+    name: "speed_dorm"
+  address: 0x11
+  update_interval: 10s
+  i2c_id: bus_a
+- platform: cg_anem
+  temperature:
+    name: "temp_main"
+  wind_speed:
+    name: "speed_main"
+  address: 0x11
+  update_interval: 10s
+  i2c_id: bus_b
+```
